@@ -23,7 +23,6 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
     JPasswordField ppassword1 = new JPasswordField(10);
     
     JLabel lJudul = new JLabel("DAFTAR AKUN ");
-    JLabel lJudul1 = new JLabel("SILAHKAN =D ");
     JLabel lnamalengkap = new JLabel("Nama Lengkap");
     JLabel lemail = new JLabel("Alamat Email");
     JLabel lusername = new JLabel("Username");
@@ -41,7 +40,6 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
         
         setLayout(null);
         add(lJudul);
-        add(lJudul1);
         add(lnamalengkap);
         add(txnamalengkap);
         add(lemail);
@@ -58,9 +56,6 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
         lJudul.setFont(new java.awt.Font("Couture", 2, 24));
         lJudul.setForeground(Color.orange);
         lJudul.setBounds(10, 10, 360, 40);
-        lJudul1.setFont(new java.awt.Font("Century Gothic", 2, 10));
-        lJudul1.setForeground(Color.black);
-        lJudul1.setBounds(10, 28, 360, 40);
         lnamalengkap.setBounds(50, 90, 120, 20);
         lnamalengkap.setForeground(Color.white);
         txnamalengkap.setBounds(170, 90, 170, 20);
@@ -82,8 +77,8 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
         btnlogin.addActionListener(this);
         btndaftar.addActionListener(this);
         
-        setDefaultCloseOperation(3);
         setSize(400, 350);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
 
         controllerDaftar = new ControllerDaftar();
