@@ -28,7 +28,6 @@ public class ViewLogin extends JFrame implements ActionListener, ListenerLogin {
 
     public ViewLogin() {
         setTitle("LOGIN");
-        setDefaultCloseOperation(3);
         lGambar = new JLabel(new ImageIcon(getClass().getResource("image/loog.png")));
 
         btnLogin = new JButton("Login");
@@ -58,7 +57,11 @@ public class ViewLogin extends JFrame implements ActionListener, ListenerLogin {
 
         btnLogin.addActionListener(this);
         btnSignup.addActionListener(this);
+        
+        setSize(500, 500);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
+        
         controllerLogin = new ControllerLogin();
         modelLogin = new ModelLogin();
         modelLogin.setLoginListener((ListenerLogin) this);
