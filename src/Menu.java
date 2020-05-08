@@ -54,6 +54,15 @@ public class Menu extends JFrame {
         setDefaultCloseOperation(3);
         setSize(750, 300);
         setVisible(true);
+        
+        btnPesan.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                setVisible(false);
+                DataPesan data = new DataPesan();
+            }
+        });
+        
     }
 
     public static void main(String[] args) {
