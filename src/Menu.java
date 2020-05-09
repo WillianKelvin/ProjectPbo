@@ -37,6 +37,7 @@ public class Menu extends JFrame {
         add(btnPesan);
         add(btnJadwal);
         add(btnRiwayat);
+        add(lGambar);
 
         lJudul.setFont(new java.awt.Font("Couture", 2, 27));
         lJudul.setForeground(Color.orange);
