@@ -28,6 +28,7 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
     JLabel lusername = new JLabel("Username");
     JLabel lpassword = new JLabel("Password");
     JLabel lpassword1 = new JLabel("Confirm Password");
+    JLabel lGambar;
     
     JButton btndaftar = new JButton("Daftar");
     JButton btnlogin = new JButton("Login");
@@ -38,6 +39,7 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
     public ViewDaftar(){
         setTitle("DAFTAR");
         
+        lGambar = new JLabel(new ImageIcon (getClass().getResource("image/kai.png")));
         setLayout(null);
         add(lJudul);
         add(lnamalengkap);
@@ -52,6 +54,7 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
         add(ppassword1);
         add(btnlogin);
         add(btndaftar);
+        add(lGambar);
         
         lJudul.setFont(new java.awt.Font("Couture", 2, 24));
         lJudul.setForeground(Color.orange);
@@ -73,6 +76,7 @@ public class ViewDaftar extends JFrame implements ActionListener , ListenerDafta
         ppassword1.setBounds(170, 190, 170, 20);
         btnlogin.setBounds(50, 240, 80, 20);
         btndaftar.setBounds(250, 240, 80, 20);
+        lGambar.setBounds(5,5,400,300);
        
         btnlogin.addActionListener(this);
         btndaftar.addActionListener(this);
