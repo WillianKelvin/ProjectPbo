@@ -28,6 +28,7 @@ public class Menu extends JFrame {
     public Menu() {
         setTitle("Pembelian Tiket Kereta Api");
 
+        lGambar = new JLabel (new ImageIcon(getClass().getResource("image/kereta-api.jpg")));
         setLayout(null);
         add(lJudul);
         add(lPesan);
@@ -50,8 +51,9 @@ public class Menu extends JFrame {
         btnPesan.setBounds(100, 170, 100, 50);
         btnJadwal.setBounds(330, 170, 100, 50);
         btnRiwayat.setBounds(550, 170, 100, 50);
+        lGambar.setBounds(5,5,745,290);
 
-        setDefaultCloseOperation(3);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(750, 300);
         setVisible(true);
         
@@ -62,6 +64,23 @@ public class Menu extends JFrame {
                 DataPesan data = new DataPesan();
             }
         });
+        
+        btnJadwal.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                setVisible(false);
+                LihatJadwal jadwal = new LihatJadwal();
+            }
+        });
+
+        btnRiwayat.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                setVisible(false);
+                RiwayatPerjalanan r = new RiwayatPerjalanan();
+            }
+        });
+    }
         
     }
 
