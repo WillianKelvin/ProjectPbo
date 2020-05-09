@@ -49,7 +49,7 @@ public class DataPesan extends JFrame {
     
     String[] namaasal = {"YOGYAKARTA","LEMPUYANGAN"};
     JComboBox cmbasal = new JComboBox(namaasal);
-    String[] namatujuan = {"Bandung","Jakarta","Magelang","Surabaya"};
+    String[] namatujuan = {"Bandung","Jakarta","Malang","Surabaya"};
     JComboBox cmbtujuan = new JComboBox(namatujuan);
     
     JButton btnBeli = new JButton ("Beli");
