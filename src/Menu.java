@@ -44,11 +44,14 @@ public class Menu extends JFrame {
         lPesan.setFont(new java.awt.Font("Futura Bk Bt", 2, 15));
         lJadwal.setFont(new java.awt.Font("Futura Bk Bt", 2, 15));
         lRiwayat.setFont(new java.awt.Font("Futura Bk Bt", 2, 15));
+        lPesan.setForeground(Color.white);
+        lJadwal.setForeground(Color.white);
+        lRiwayat.setForeground(Color.white);
         
         lJudul.setBounds(130, 2, 480, 40);
-        lPesan.setBounds(90, 220, 120, 20);
-        lJadwal.setBounds(290, 220, 160, 20);
-        lRiwayat.setBounds(500, 220, 150, 20);
+        lPesan.setBounds(120, 220, 120, 20);
+        lJadwal.setBounds(320, 220, 160, 20);
+        lRiwayat.setBounds(530, 220, 150, 20);
         btnPesan.setBounds(100, 170, 100, 50);
         btnJadwal.setBounds(330, 170, 100, 50);
         btnRiwayat.setBounds(550, 170, 100, 50);
