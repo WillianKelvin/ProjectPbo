@@ -29,15 +29,13 @@ public class ViewData extends JFrame implements ActionListener, ListenerData{
     JButton btnReset = new JButton("Reset");
     JButton btnData = new JButton("Cetak");
     JLabel lJudul = new JLabel(" ISI DATA TIKET KERETA API ");
-    JLabel lGambar;
+    
     ControllerData controllerData;
     ModelData modelData;
     
     public ViewData() {
         setTitle("INPUT DATA DIRI");
-        
-//        lGambar = new JLabel (new ImageIcon (getClass().getResource("image/grhpcs.jpg")));
-        
+                
         setLayout(null);
         add(lnamadepan);
         add(lJudul);
@@ -53,7 +51,6 @@ public class ViewData extends JFrame implements ActionListener, ListenerData{
         add(btnSave);
         add(btnReset);
         add(btnData);
-//        add(lGambar);
         
         lJudul.setFont(new java.awt.Font("Couture", 2, 18));
         lJudul.setForeground(Color.orange);
@@ -71,7 +68,6 @@ public class ViewData extends JFrame implements ActionListener, ListenerData{
         btnReset.setBounds(470, 220, 80, 20);
         btnSave.setBounds(560, 220, 80, 20);
         btnData.setBounds(370, 220, 80, 20);
-//        lGambar.setBounds(0, 0, 800, 300);
 
         btnSave.addActionListener(this);
         btnReset.addActionListener(this);
