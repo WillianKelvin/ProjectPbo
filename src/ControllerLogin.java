@@ -34,10 +34,10 @@ public class ControllerLogin {
         String username = viewLogin.getUsername().getText();
         String password = viewLogin.getPassword().getText();
 
-        if (username.trim().equals("")) {
-            JOptionPane.showMessageDialog(viewLogin, "Username Masih Kosong !");
-        } else if (password.trim().equals("")) {
-            JOptionPane.showMessageDialog(viewLogin, "Password Masih Kosong !");
+        if (username.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Username Masih Kosong !");
+        } else if (password.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Password Masih Kosong !");
         } 
         else {
             model.submitForm(viewLogin);
