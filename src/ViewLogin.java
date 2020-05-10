@@ -53,7 +53,7 @@ public class ViewLogin extends JFrame implements ActionListener, ListenerLogin {
         btnLogin.setBounds(130, 290, 200, 40);
         lJudul1.setBounds(130, 360, 300, 40);
         btnSignup.setBounds(130, 390, 200, 40);
-        lGambar.setBounds(0, 0, 500, 450);
+        lGambar.setBounds(5, 5, 495, 445);
 
         btnLogin.addActionListener(this);
         btnSignup.addActionListener(this);
